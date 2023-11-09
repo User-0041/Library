@@ -12,7 +12,7 @@ void ShowBorrowed(struct  Borrowed* bb, struct   Books* bs ,struct  Clients* ss)
 	for (int i = 0; i < bb->booksIds.used ;  i++)
 	{
 		PrintBookInfo(bs, getItemFromVector(&bb->booksIds,i));
-		PrintClient(ss, getItemFromVector(&bb->clientsIds, i));
+		PrintClient(ss, getItemFromVector(&bb->clientsIds,i));
 	}
 }
 

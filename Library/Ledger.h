@@ -28,7 +28,7 @@ struct Borrowed NewBorrowed();
 // Displays information about borrowed items.
 // French Comment
 // Affiche des informations sur les éléments empruntés.
-void ShowBorrowed(struct Borrowed* bb, struct Books* bs);
+void ShowBorrowed(struct  Borrowed* bb, struct   Books* bs, struct  Clients* ss);
 
 // English Comment
 // Borrows a book and updates the borrowed items collection.

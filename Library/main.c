@@ -94,12 +94,12 @@ int main() {
 
     BorrowBook(&myLedger, &myLibrary , &myClientList, 1, 1);
     BorrowBook(&myLedger, &myLibrary, &myClientList, 0, 1);
-    ShowBorrowed(&myLedger, &myLibrary);
+    ShowBorrowed(&myLedger, &myLibrary , &myClientList);
 
     ReturnBook(&myLedger, &myLibrary, &myClientList, 0, 1);
 
 
-    ShowBorrowed(&myLedger, &myLibrary);
+    ShowBorrowed(&myLedger, &myLibrary , &myClientList );
 
 
 }
