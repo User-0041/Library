@@ -1,8 +1,8 @@
 #include"Books.h"
 
 
-struct books NewBooks() {
-    struct books bs;
+struct Books NewBooks() {
+    struct Books bs;
     bs.availabilities = NewIntVector();
     bs.ids = NewIntVector();
     bs.names = NewStringVector();
@@ -10,11 +10,11 @@ struct books NewBooks() {
     return bs;
 }
 
-int getSize(struct books *  bs) {
+int getSize(struct Books *  bs) {
     return bs->ids.used;
 }
-struct book readBookFromUser() {
-    struct book newBook;
+struct Book readBookFromUser() {
+    struct Book newBook;
     int x ;
     printf("Enter Book ID: ");
    x= scanf("%d", &newBook.id);
@@ -32,7 +32,7 @@ struct book readBookFromUser() {
 }
 
 
-void AppendBookToList(struct book* c, struct books* cs) {
+void AppendBookToList(struct Book* c, struct Books* cs) {
     appendToIntVector(&cs->availabilities, c->availabilitie);
     appendToIntVector(&cs->stocks, c->stock);
     appendToStringVector(&cs->names, c->name);
@@ -40,7 +40,7 @@ void AppendBookToList(struct book* c, struct books* cs) {
 }
 
 
-void PrintBookInfo(struct books* bs, int id) {
+void PrintBookInfo(struct Books* bs, int id) {
     printf("Book #%d: Availability: %d Stock: %d Name: %s\n",
         getItemFromVector(&bs->ids, id),
         getItemFromVector(&bs->availabilities, id),
@@ -49,7 +49,7 @@ void PrintBookInfo(struct books* bs, int id) {
     printf("\n");
 }
 
-void ShowAvailable(struct books* cs) {
+void ShowAvailable(struct Books* cs) {
     for (int i = 0; i < cs->ids.used ; i++)
     {   
         if (getItemFromVector(&cs->availabilities,i)){
@@ -57,7 +57,7 @@ void ShowAvailable(struct books* cs) {
         }
     }
 }
-void ShowNonAvailable(struct books* cs) {
+void ShowNonAvailable(struct Books* cs) {
     for (int i = 0; i < cs->ids.used; i++)
     {
         if (!getItemFromVector(&cs->availabilities, i)) {

@@ -127,16 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Archive.c" />
     <ClCompile Include="Books.c" />
     <ClCompile Include="Clients.c" />
-    <ClCompile Include="Clients.h" />
     <ClCompile Include="Ledger.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="StringVector.c" />
     <ClCompile Include="VectorInt.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Archive.h" />
     <ClInclude Include="Books.h" />
+    <ClInclude Include="Clients.h" />
     <ClInclude Include="Ledger.h" />
     <ClInclude Include="StringVector.h" />
     <ClInclude Include="VectorInt.h" />

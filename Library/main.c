@@ -1,5 +1,5 @@
-#include"Books.h"
 #include"Clients.h"
+#include"Books.h"
 #include "Ledger.h"
 
 
@@ -57,13 +57,13 @@ Ce code illustre une approche orientée données avec l'utilisation de types de do
 
 
 
+
 int main() {
-
-
-    struct books myLibrary = NewBooks();
-    struct book book1 = { 1, 10, "DasCapital", 1 };
-    struct book book2 = { 2, 5, "WealthOfNations", 0 };
-    struct book book3 = { 3, 15, "HistoryOfModernCapital", 1 };
+    
+    struct Books myLibrary = NewBooks();
+    struct Book book1 = { 1, 10, "DasCapital", 1 };
+    struct Book book2 = { 2, 5, "WealthOfNations", 0 };
+    struct Book book3 = { 3, 15, "HistoryOfModernCapital", 1 };
 
     AppendBookToList(&book1, &myLibrary);
     AppendBookToList(&book2, &myLibrary);
@@ -90,7 +90,7 @@ int main() {
 
 
 
-    struct Borrowed myLedger = NewBorrowed();
+    struct Ledger myLedger = NewBorrowed();
 
     BorrowBook(&myLedger, &myLibrary , &myClientList, 1, 1);
     BorrowBook(&myLedger, &myLibrary, &myClientList, 0, 1);
@@ -101,5 +101,5 @@ int main() {
 
     ShowBorrowed(&myLedger, &myLibrary , &myClientList );
 
-
+    
 }

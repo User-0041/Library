@@ -24,13 +24,13 @@
     <ClCompile Include="Ledger.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Clients.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="VectorInt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StringVector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Archive.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Clients.c">
@@ -48,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StringVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Archive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Clients.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

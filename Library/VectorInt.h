@@ -52,3 +52,5 @@ void updateItemAtIndex(struct intVector* v, int index, int value);
 // French Comment
 // Supprime un entier du vecteur à un indice spécifié.
 void removeFromIntVector(struct intVector* v, int index);
+
+

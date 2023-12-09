@@ -14,7 +14,7 @@ La Conception Orientée Données (COD) est illustrée dans ce code, mettant l'accen
 // Represents a collection of books with dedicated vectors for ids, stocks, names, and availabilities.
 // French Comment
 // Représente une collection de livres avec des vecteurs dédiés pour les identifiants, les stocks, les noms et les disponibilités.
-struct books
+struct Books
 {
 	struct intVector ids;           // Vecteur pour les identifiants de livres
 	struct intVector stocks;        // Vecteur pour les stocks de livres
@@ -26,7 +26,7 @@ struct books
 // Defines individual book entities with id, stock, name, and availability attributes.
 // French Comment
 // Définit des entités de livre individuelles avec des attributs d'identifiant, de stock, de nom et de disponibilité.
-struct book
+struct Book
 {
 	int id;                         // Identifiant du livre
 	int stock;                      // Stock du livre
@@ -38,43 +38,43 @@ struct book
 // Reads a book entry from the user.
 // French Comment
 // Lit une entrée de livre depuis l'utilisateur.
-struct book readBookFromUser();
+struct Book readBookFromUser();
 
 // English Comment
 // Creates a new collection of books.
 // French Comment
 // Crée une nouvelle collection de livres.
-struct books NewBooks();
+struct Books NewBooks();
 
 // English Comment
 // Retrieves the size of the books collection.
 // French Comment
 // Récupère la taille de la collection de livres.
-int getSize(struct books* bs);
+int getSize(struct Books* bs);
 
 // English Comment
 // Adds a book to the collection.
 // French Comment
 // Ajoute un livre à la collection.
-void AppendBookToList(struct book* b, struct books* bs);
+void AppendBookToList(struct Book* b, struct Books* bs);
 
 // English Comment
 // Prints information about a specific book.
 // French Comment
 // Imprime des informations sur un livre spécifique.
-void PrintBookInfo(struct books* bs, int id);
+void PrintBookInfo(struct Books* bs, int id);
 
 // English Comment
 // Displays available books.
 // French Comment
 // Affiche les livres disponibles.
-void ShowAvailable(struct books* cs);
+void ShowAvailable(struct Books* cs);
 
 // English Comment
 // Displays non-available books.
 // French Comment
 // Affiche les livres non disponibles.
-void ShowNonAvailable(struct books* cs);
+void ShowNonAvailable(struct Books* cs);
 
 // English Comment
 /*
